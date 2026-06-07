@@ -114,77 +114,110 @@ margin:auto;
 
 }
 
+
 /* ===================================
-TABLE OF CONTENTS PAGE
+TABLE OF CONTENTS CARDS
 =================================== */
 
-.toc-entry{
+.contents-cards{
 
-max-width:800px;
+max-width:900px;
 
 margin:0 auto;
 
 }
 
-.toc-entry h3{
+.toc-card{
 
-font-size:1.3rem;
+display:block;
 
-margin-bottom:6px;
+padding:32px;
 
-font-family:"Inter",sans-serif;
+margin:24px 0;
 
-font-weight:600;
+background:
 
-}
+rgba(255,255,255,.35);
 
-.toc-entry h3 a{
+border:
 
-color:var(--bronze);
+1px solid
+rgba(216,160,76,.20);
 
-text-decoration:none;
+border-radius:20px;
+
+color:var(--text);
 
 transition:.3s;
 
+box-shadow:
+
+0 10px 30px
+
+rgba(0,0,0,.05);
+
 }
 
-.toc-entry h3 a:hover{
+.toc-card:hover{
+
+transform:translateY(-4px);
+
+border-color:
+
+rgba(216,160,76,.50);
+
+box-shadow:
+
+0 20px 40px
+
+rgba(0,0,0,.10);
+
+}
+
+.toc-label{
+
+display:block;
+
+font-size:.85rem;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+color:var(--amber);
+
+margin-bottom:10px;
+
+}
+
+.toc-card h3{
+
+font-size:2.2rem;
+
+line-height:1.1;
+
+color:var(--bronze);
+
+margin-bottom:16px;
+
+}
+
+.toc-card p{
+
+margin-bottom:16px;
+
+}
+
+.read-link{
+
+font-weight:700;
 
 color:var(--amber);
 
 }
 
-.toc-entry h4{
-
-font-size:2rem;
-
-color:var(--bronze);
-
-margin-bottom:18px;
-
-font-family:
-"Cormorant Garamond",
-serif;
-
-line-height:1.1;
-
-}
-
-.toc-entry p{
-
-font-size:1.08rem;
-
-margin-bottom:0;
-
-}
-
-.contents-page .chapter-divider{
-
-width:min(320px,40%);
-
-margin:45px auto;
-
-}
 /* ===================================
 INDEX HERO
 =================================== */
