@@ -1,0 +1,534 @@
+/* ===================================
+KEPT OR RELEASED BY COVENANT
+Stylesheet
+Bradley Hobbs
+=================================== */
+
+/* ===================================
+ROOT
+=================================== */
+
+:root{
+
+--midnight:#08131d;
+--deep-navy:#13273e;
+--twilight:#2d4762;
+
+--burnt-bronze:#7d4720;
+--covenant-gold:#b07a35;
+--sunrise:#d8a04c;
+--warm-light:#f0d49a;
+
+--parchment:#f7f2e8;
+--white:#ffffff;
+
+--shadow:
+0 25px 60px
+rgba(0,0,0,.35);
+
+}
+
+/* ===================================
+RESET
+=================================== */
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:"Inter",sans-serif;
+
+background:var(--midnight);
+
+color:var(--parchment);
+
+line-height:1.9;
+
+overflow-x:hidden;
+
+}
+
+/* ===================================
+GLOBAL
+=================================== */
+
+.wrapper{
+
+width:min(1100px,90%);
+margin:auto;
+
+}
+
+h1,
+h2,
+h3{
+
+font-family:
+"Cormorant Garamond",
+serif;
+
+font-weight:700;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+section{
+
+padding:120px 0;
+
+}
+
+/* ===================================
+HERO
+=================================== */
+
+.hero{
+
+position:relative;
+
+height:100vh;
+
+background:
+
+linear-gradient(
+
+rgba(8,19,29,.45),
+
+rgba(8,19,29,.85)
+
+),
+
+url("banner.jpg")
+
+center center
+cover
+no-repeat;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+overflow:hidden;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(8,19,29,.10),
+
+rgba(8,19,29,.75)
+
+);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+padding:20px;
+
+}
+
+.eyebrow{
+
+color:var(--warm-light);
+
+text-transform:uppercase;
+
+letter-spacing:3px;
+
+font-size:.9rem;
+
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:
+clamp(4rem,10vw,7rem);
+
+line-height:1;
+
+color:var(--warm-light);
+
+}
+
+.hero h2{
+
+font-size:
+clamp(2rem,5vw,3.5rem);
+
+font-weight:400;
+
+letter-spacing:3px;
+
+color:var(--parchment);
+
+margin-top:10px;
+
+}
+
+.hero-text{
+
+margin-top:30px;
+
+font-size:1.2rem;
+
+max-width:700px;
+
+margin-left:auto;
+margin-right:auto;
+
+}
+
+/* ===================================
+INTRODUCTION
+=================================== */
+
+.introduction{
+
+position:relative;
+
+}
+
+.glass-card{
+
+background:
+
+rgba(255,255,255,.04);
+
+border:
+
+1px solid
+rgba(216,160,76,.15);
+
+border-radius:20px;
+
+padding:45px;
+
+backdrop-filter:blur(14px);
+
+box-shadow:var(--shadow);
+
+}
+
+.glass-card p + p{
+
+margin-top:20px;
+
+}
+
+/* ===================================
+HEADINGS
+=================================== */
+
+section h2{
+
+font-size:
+clamp(2.5rem,5vw,4rem);
+
+color:var(--warm-light);
+
+margin-bottom:35px;
+
+text-align:center;
+
+}
+
+/* ===================================
+CONTENTS
+=================================== */
+
+.contents ul{
+
+list-style:none;
+
+text-align:center;
+
+}
+
+.contents li{
+
+padding:12px 0;
+
+font-size:1.1rem;
+
+border-bottom:
+
+1px solid
+rgba(216,160,76,.12);
+
+}
+
+.contents li:last-child{
+
+border-bottom:none;
+
+}
+
+/* ===================================
+SUPPORT
+=================================== */
+
+.support-section{
+
+text-align:center;
+
+}
+
+.support-section p{
+
+max-width:800px;
+
+margin:
+
+0 auto 24px;
+
+}
+
+.support-buttons{
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin:40px 0;
+
+}
+
+.support-buttons a{
+
+display:inline-block;
+
+padding:
+
+14px 36px;
+
+border-radius:999px;
+
+font-weight:600;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+var(--burnt-bronze),
+
+var(--covenant-gold)
+
+);
+
+color:var(--white);
+
+transition:.3s ease;
+
+}
+
+.support-buttons a:hover{
+
+transform:
+translateY(-3px);
+
+box-shadow:
+
+0 12px 30px
+
+rgba(216,160,76,.25);
+
+}
+
+.support-note{
+
+opacity:.8;
+
+font-style:italic;
+
+}
+
+/* ===================================
+FOOTER
+=================================== */
+
+footer{
+
+padding:
+
+100px 0 70px;
+
+text-align:center;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+var(--midnight),
+
+#040608
+
+);
+
+border-top:
+
+1px solid
+rgba(216,160,76,.12);
+
+}
+
+footer h2{
+
+font-size:
+clamp(2.5rem,6vw,4rem);
+
+color:var(--warm-light);
+
+margin-bottom:5px;
+
+}
+
+footer h3{
+
+font-size:1.4rem;
+
+font-weight:400;
+
+letter-spacing:3px;
+
+margin-bottom:35px;
+
+color:var(--parchment);
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-bottom:35px;
+
+}
+
+.footer-links a{
+
+color:var(--warm-light);
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:var(--sunrise);
+
+}
+
+.copyright{
+
+margin-bottom:10px;
+
+opacity:.8;
+
+}
+
+.footer-text{
+
+opacity:.7;
+
+}
+
+/* ===================================
+RESPONSIVE
+=================================== */
+
+@media(max-width:768px){
+
+section{
+
+padding:90px 0;
+
+}
+
+.glass-card{
+
+padding:30px;
+
+}
+
+.hero-text{
+
+font-size:1rem;
+
+}
+
+.footer-links{
+
+gap:18px;
+
+}
+
+.support-buttons{
+
+flex-direction:column;
+
+}
+
+.support-buttons a{
+
+width:220px;
+
+}
+
+}
