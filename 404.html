@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Page not found.">
+
+<title>
+
+404 | Kept or Released by Covenant
+
+</title>
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="styles.css">
+
+</head>
+
+<body>
+
+<header class="hero small-hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<p class="eyebrow">
+
+404
+
+</p>
+
+<h1>
+
+The Page Was Not Found
+
+</h1>
+
+<p class="hero-text">
+
+The journey continues even when the path changes.
+
+</p>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="chapter-page">
+
+<div class="wrapper">
+
+<div class="glass-card">
+
+<hr class="section-divider">
+
+<h2>
+
+Every Journey Has Unexpected Turns
+
+</h2>
+
+<p>
+
+The page you were looking for may have been moved, renamed, or may never have existed. A missing page does not mean the story has ended.
+
+</p>
+
+<p>
+
+Every chapter of this project invites readers to examine tradition, discover truth, and continue seeking the covenant that Jesus established with grace and compassion.
+
+</p>
+
+<p>
+
+Choose a destination below and continue reading.
+
+</p>
+
+<div class="home-actions">
+
+<a
+class="chapter-button"
+href="index.html">
+
+Return Home
+
+</a>
+
+<a
+class="chapter-button"
+href="contents.html">
+
+Table of Contents
+
+</a>
+
+<a
+class="chapter-button"
+href="introduction.html">
+
+Begin Reading
+
+</a>
+
+</div>
+
+<hr class="section-divider">
+
+<p
+style="text-align:center;opacity:.8;">
+
+Truth welcomes examination.
+
+<br>
+
+Grace welcomes people.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<div id="footer-container"></div>
+
+<script>
+
+fetch("footer.html")
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById("footer-container").innerHTML = data;
+
+});
+
+</script>
+
+</body>
+
+</html>
