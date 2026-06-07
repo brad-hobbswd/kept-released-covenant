@@ -815,6 +815,33 @@ color:var(--gold);
 }
 
 /* ===================================
+SECTION DIVIDER
+=================================== */
+
+.section-divider{
+
+width:min(500px,60%);
+
+height:1px;
+
+margin:80px auto;
+
+border:none;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+rgba(200,123,43,.15),
+rgba(216,160,76,.85),
+rgba(200,123,43,.15),
+transparent
+);
+
+}
+
+/* ===================================
 RESPONSIVE
 =================================== */
 
