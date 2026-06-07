@@ -166,69 +166,21 @@ Support helps fund future books, website development, ministry resources, and ne
 </main>
 
 
-<footer>
+<div id="footer-container"></div>
 
-<div class="wrapper">
+<script>
 
-<h2>
+fetch("footer.html")
 
-Kept or Released
+.then(response => response.text())
 
-</h2>
+.then(data=>{
 
-<h3>
+document.getElementById("footer-container").innerHTML=data;
 
-By Covenant
+});
 
-</h3>
-
-<div class="footer-links">
-
-<a href="#top">
-
-Home
-
-</a>
-
-<a href="#introduction">
-
-Introduction
-
-</a>
-
-<a href="#contents">
-
-Contents
-
-</a>
-
-<a href="epilogue.html">
-
-Epilogue
-
-</a>
-
-</div>
-
-<p class="copyright">
-
-© 2026 Bradley Hobbs
-
-</p>
-
-<p class="footer-text">
-
-Truth welcomes examination.
-
-<br>
-
-Grace welcomes people.
-
-</p>
-
-</div>
-
-</footer>
+</script>
 
 </body>
 
