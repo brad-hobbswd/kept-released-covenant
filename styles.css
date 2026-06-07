@@ -115,6 +115,77 @@ margin:auto;
 }
 
 /* ===================================
+TABLE OF CONTENTS PAGE
+=================================== */
+
+.toc-entry{
+
+max-width:800px;
+
+margin:0 auto;
+
+}
+
+.toc-entry h3{
+
+font-size:1.3rem;
+
+margin-bottom:6px;
+
+font-family:"Inter",sans-serif;
+
+font-weight:600;
+
+}
+
+.toc-entry h3 a{
+
+color:var(--bronze);
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.toc-entry h3 a:hover{
+
+color:var(--amber);
+
+}
+
+.toc-entry h4{
+
+font-size:2rem;
+
+color:var(--bronze);
+
+margin-bottom:18px;
+
+font-family:
+"Cormorant Garamond",
+serif;
+
+line-height:1.1;
+
+}
+
+.toc-entry p{
+
+font-size:1.08rem;
+
+margin-bottom:0;
+
+}
+
+.contents-page .chapter-divider{
+
+width:min(320px,40%);
+
+margin:45px auto;
+
+}
+/* ===================================
 INDEX HERO
 =================================== */
 
@@ -369,38 +440,6 @@ font-size:1.08rem;
 
 }
 
-/* ===================================
-CONTENTS
-=================================== */
-
-.contents ul{
-
-list-style:none;
-
-max-width:900px;
-
-margin:auto;
-
-}
-
-.contents li{
-
-padding:18px 0;
-
-font-size:1.1rem;
-
-border-bottom:
-
-1px solid
-rgba(216,160,76,.35);
-
-}
-
-.contents li:last-child{
-
-border-bottom:none;
-
-}
 
 /* ===================================
 SUPPORT
