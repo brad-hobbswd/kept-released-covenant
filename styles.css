@@ -316,7 +316,9 @@ gap:20px;
 
 flex-wrap:wrap;
 
-margin-top:50px;
+margin-top:60px;
+
+margin-bottom:100px;
 
 }
 
@@ -408,7 +410,7 @@ SUPPORT
 
 max-width:800px;
 
-margin:0 auto;
+margin:0 auto 80px;
 
 text-align:center;
 
@@ -417,9 +419,10 @@ text-align:center;
 .support-section h2{
 
 font-size:
-clamp(2.2rem,4vw,3.5rem);
 
-margin-bottom:30px;
+clamp(2.5rem,5vw,4rem);
+
+margin-bottom:25px;
 
 }
 
@@ -453,7 +456,7 @@ display:inline-flex;
 justify-content:center;
 align-items:center;
 
-padding:16px 38px;
+padding:14px 32px;
 
 border-radius:999px;
 
@@ -476,6 +479,11 @@ box-shadow:
 rgba(200,123,43,.25);
 
 transition:.3s;
+
+min-width:160px;
+
+font-size:1rem;
+
 
 }
 
