@@ -301,6 +301,32 @@ margin-bottom:60px;
 }
 
 /* ===================================
+HOME ACTIONS
+=================================== */
+
+.home-actions{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:50px;
+
+}
+
+.home-actions .chapter-button{
+
+min-width:240px;
+
+}
+
+/* ===================================
 BOOK CONTENT
 =================================== */
 
