@@ -1,1 +1,1 @@
-# kept-released-covenant
+# brad-hobbswd.github.io/kept-released-covenant
