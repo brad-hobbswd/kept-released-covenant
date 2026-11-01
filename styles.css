@@ -1266,3 +1266,149 @@ The illustrated banner is reserved for the homepage.
     font-size:.93rem;
   }
 }
+
+
+/* ===================================
+CHAPTER 1 THROUGH EPILOGUE READING DESIGN
+Shared interior treatment. The illustrated banner remains homepage-only.
+=================================== */
+
+.small-hero{
+  min-height:clamp(250px,32vw,360px);
+  padding:56px 20px;
+  background:
+    radial-gradient(ellipse at 50% 0%,rgba(39,73,107,.92),transparent 68%),
+    linear-gradient(145deg,var(--navy),var(--midnight));
+  border-bottom:3px solid rgba(216,160,76,.7);
+}
+
+.small-hero .hero-overlay{
+  display:none;
+}
+
+.small-hero .hero-content{
+  width:min(900px,100%);
+  max-width:900px;
+  margin:0 auto;
+  padding:0 10px;
+}
+
+.small-hero .eyebrow{
+  color:var(--gold-light);
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.2em;
+  margin-bottom:14px;
+}
+
+.small-hero h1{
+  color:var(--white);
+  font-size:clamp(2.8rem,7vw,5rem);
+  line-height:1;
+  margin:0 0 18px;
+}
+
+.small-hero .hero-text{
+  max-width:700px;
+  margin:0 auto;
+  color:var(--parchment);
+  font-size:1rem;
+  line-height:1.75;
+}
+
+.chapter-page{
+  width:min(calc(100% - 40px),900px);
+  max-width:900px;
+  margin:0 auto;
+  padding:clamp(32px,5vw,62px) 0 18px;
+}
+
+.chapter-page .wrapper{
+  width:100%;
+  max-width:790px;
+}
+
+.chapter-page .glass-card{
+  padding:clamp(24px,4.5vw,54px) clamp(20px,5vw,58px);
+  border:1px solid rgba(216,160,76,.28);
+  border-radius:18px;
+  background:rgba(255,252,244,.82);
+  box-shadow:0 12px 34px rgba(11,26,43,.07);
+}
+
+.chapter-page .glass-card p{
+  color:#3c3024;
+  font-size:clamp(1rem,1.25vw,1.08rem);
+  line-height:1.95;
+  margin:0 0 1.45em;
+  text-align:left;
+  overflow-wrap:break-word;
+  hyphens:auto;
+}
+
+.chapter-page .glass-card p:last-child{
+  margin-bottom:0;
+}
+
+.chapter-page .glass-card .section-divider{
+  width:min(220px,48%);
+  margin:0 auto 34px;
+}
+
+.chapter-page + .chapter-navigation,
+main:has(.chapter-page) + .chapter-navigation{
+  width:min(calc(100% - 40px),900px);
+  margin:28px auto 66px;
+  padding-top:26px;
+  border-top:1px solid rgba(140,76,33,.2);
+}
+
+@media(max-width:768px){
+  .small-hero{
+    min-height:230px;
+    padding:42px 22px;
+  }
+  .small-hero h1{
+    font-size:clamp(2.5rem,11vw,3.4rem);
+  }
+  .small-hero .hero-text{
+    font-size:.93rem;
+  }
+  .chapter-page{
+    width:calc(100% - 28px);
+    padding-top:28px;
+  }
+  .chapter-page .glass-card{
+    padding:25px 21px;
+    border-radius:13px;
+  }
+  .chapter-page .glass-card p{
+    font-size:1rem;
+    line-height:1.85;
+    margin-bottom:1.3em;
+  }
+  main:has(.chapter-page) + .chapter-navigation{
+    width:calc(100% - 32px);
+    margin:20px auto 44px;
+    gap:12px;
+  }
+}
+
+@media(max-width:480px){
+  .chapter-page .glass-card{
+    padding:22px 18px;
+  }
+  .chapter-page .glass-card p{
+    font-size:.97rem;
+    line-height:1.82;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .chapter-navigation .chapter-button{
+    transition:none;
+  }
+  .chapter-navigation .chapter-button:hover{
+    transform:none;
+  }
+}
