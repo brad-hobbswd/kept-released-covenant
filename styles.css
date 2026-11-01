@@ -1117,3 +1117,89 @@ CONTENTS PAGE REDESIGN
   .toc-card{transition:none;}
   .toc-card:hover{transform:none;}
 }
+
+
+/* ===================================
+INTRODUCTION READING EXPERIENCE
+=================================== */
+
+.reading-hero{
+  padding-bottom:0;
+}
+
+.introduction-reading{
+  width:min(100% - 40px,900px);
+  max-width:900px;
+  margin:0 auto 0;
+  padding:clamp(32px,5vw,62px) 0 18px;
+}
+
+.reading-wrapper{
+  width:100%;
+  max-width:790px;
+}
+
+.reading-card{
+  padding:clamp(24px,4.5vw,54px) clamp(20px,5vw,58px);
+  border:1px solid rgba(216,160,76,.28);
+  border-radius:18px;
+  background:rgba(255,252,244,.72);
+  box-shadow:0 12px 34px rgba(11,26,43,.07);
+}
+
+.reading-card .section-divider{
+  width:min(220px,48%);
+  margin:0 auto 34px;
+}
+
+.reading-card p{
+  color:#3c3024;
+  font-size:clamp(1rem,1.25vw,1.08rem);
+  line-height:1.95;
+  margin:0 0 1.45em;
+  text-align:left;
+  overflow-wrap:break-word;
+  hyphens:auto;
+}
+
+.reading-card p:last-child{
+  margin-bottom:0;
+}
+
+.introduction-reading + .chapter-navigation{
+  width:min(100% - 40px,900px);
+  margin:28px auto 66px;
+  padding-top:26px;
+  border-top:1px solid rgba(140,76,33,.2);
+}
+
+@media(max-width:768px){
+  .introduction-reading{
+    width:calc(100% - 28px);
+    padding-top:28px;
+  }
+  .reading-card{
+    padding:25px 21px;
+    border-radius:13px;
+  }
+  .reading-card p{
+    font-size:1rem;
+    line-height:1.85;
+    margin-bottom:1.3em;
+  }
+  .introduction-reading + .chapter-navigation{
+    width:calc(100% - 32px);
+    margin:20px auto 44px;
+    gap:12px;
+  }
+}
+
+@media(max-width:480px){
+  .reading-card{
+    padding:22px 18px;
+  }
+  .reading-card p{
+    font-size:.97rem;
+    line-height:1.82;
+  }
+}
