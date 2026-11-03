@@ -1412,3 +1412,220 @@ main:has(.chapter-page) + .chapter-navigation{
     transform:none;
   }
 }
+
+
+/* ===================================
+HOMEPAGE LANDING PAGE
+=================================== */
+
+.landing-main{
+  padding:clamp(42px,6vw,76px) 0 20px;
+}
+
+.landing-welcome{
+  width:min(920px,calc(100% - 40px));
+  margin:0 auto clamp(76px,9vw,116px);
+  text-align:center;
+}
+
+.landing-kicker{
+  display:block;
+  color:var(--amber);
+  font-size:.76rem;
+  font-weight:700;
+  letter-spacing:.2em;
+  line-height:1.5;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+
+.landing-welcome h1{
+  max-width:850px;
+  margin:0 auto 18px;
+  color:var(--navy);
+  font-size:clamp(3rem,7vw,5.5rem);
+  line-height:.98;
+}
+
+.landing-subtitle{
+  max-width:760px;
+  margin:0 auto 28px;
+  color:var(--bronze);
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(1.45rem,3vw,2rem);
+  font-weight:600;
+  line-height:1.3;
+}
+
+.landing-description{
+  max-width:790px;
+  margin:0 auto 18px;
+  color:#514332;
+  font-size:1rem;
+  line-height:1.85;
+  text-align:left;
+}
+
+.landing-actions{
+  margin:38px 0 0;
+}
+
+.landing-actions .chapter-button-secondary{
+  color:var(--bronze);
+  background:rgba(255,255,255,.55);
+  border:1px solid rgba(140,76,33,.28);
+}
+
+.landing-themes{
+  width:min(1160px,calc(100% - 40px));
+  margin:0 auto clamp(76px,9vw,116px);
+}
+
+.landing-section-heading{
+  max-width:760px;
+  margin:0 auto 38px;
+  text-align:center;
+}
+
+.landing-section-heading h2,
+.landing-invitation h2{
+  color:var(--navy);
+  font-size:clamp(2.5rem,5.5vw,4rem);
+  line-height:1.02;
+  margin:0 0 16px;
+}
+
+.landing-section-heading > p{
+  max-width:650px;
+  margin:0 auto;
+  color:#62513d;
+  font-size:1rem;
+  line-height:1.75;
+}
+
+.landing-theme-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+
+.landing-theme-card{
+  min-width:0;
+  padding:clamp(24px,3vw,34px);
+  border:1px solid rgba(216,160,76,.3);
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(255,255,255,.78),rgba(248,240,220,.8));
+  box-shadow:0 10px 28px rgba(11,26,43,.06);
+}
+
+.theme-number{
+  display:inline-block;
+  margin-bottom:18px;
+  color:var(--amber);
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.7rem;
+  font-weight:700;
+}
+
+.landing-theme-card h3{
+  margin:0 0 12px;
+  color:var(--navy);
+  font-size:1.65rem;
+  line-height:1.08;
+}
+
+.landing-theme-card p{
+  margin:0;
+  color:#554838;
+  font-size:.94rem;
+  line-height:1.75;
+}
+
+.landing-invitation{
+  width:min(1160px,calc(100% - 40px));
+  margin:0 auto clamp(76px,9vw,116px);
+  padding:clamp(38px,6vw,72px) 24px;
+  border:1px solid rgba(216,160,76,.35);
+  border-radius:20px;
+  background:
+    radial-gradient(ellipse at 50% 0%,rgba(39,73,107,.88),transparent 70%),
+    linear-gradient(145deg,var(--navy),var(--midnight));
+  box-shadow:0 20px 45px rgba(11,26,43,.13);
+  text-align:center;
+}
+
+.landing-invitation .landing-kicker{
+  color:var(--gold-light);
+}
+
+.landing-invitation h2{
+  max-width:850px;
+  margin:0 auto 18px;
+  color:var(--white);
+}
+
+.landing-invitation p{
+  max-width:690px;
+  margin:0 auto 28px;
+  color:var(--parchment);
+  font-size:1rem;
+  line-height:1.8;
+}
+
+.landing-invitation .chapter-button{
+  background:linear-gradient(135deg,var(--gold),var(--amber));
+}
+
+.landing-main .support-section{
+  margin-bottom:45px;
+}
+
+@media(max-width:800px){
+  .landing-theme-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+  .landing-theme-card{
+    padding:24px;
+  }
+}
+
+@media(max-width:600px){
+  .landing-main{
+    padding-top:38px;
+  }
+  .landing-welcome,
+  .landing-themes,
+  .landing-invitation{
+    width:calc(100% - 28px);
+  }
+  .landing-welcome h1{
+    font-size:clamp(2.7rem,12vw,3.7rem);
+    line-height:1;
+  }
+  .landing-description{
+    font-size:.96rem;
+    line-height:1.8;
+  }
+  .landing-actions{
+    gap:12px;
+    margin-top:30px;
+  }
+  .landing-actions .chapter-button{
+    width:100%;
+  }
+  .landing-section-heading h2,
+  .landing-invitation h2{
+    font-size:clamp(2.35rem,10vw,3.2rem);
+  }
+  .landing-invitation{
+    padding:38px 22px;
+    border-radius:14px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .landing-main *{
+    scroll-behavior:auto;
+  }
+}
